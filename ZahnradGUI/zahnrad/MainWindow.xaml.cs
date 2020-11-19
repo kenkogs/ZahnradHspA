@@ -15,7 +15,7 @@ using System.Windows.Shapes;
 namespace zahnrad
 {
     /// <summary>
-    /// MainWindow.xaml 的交互逻辑
+    /// MainWindow.xaml 
     /// </summary>
     public partial class MainWindow : Window
     {
@@ -28,7 +28,7 @@ namespace zahnrad
         private void Bt_calculate_Click(object sender, RoutedEventArgs e)
         {
             Double a, b, c, d, e1, h, f, g, i, j, k, n;         //Definieren Sie Variablen vom Typ double zum Empfangen von Daten und zum Berechnen von Daten
-            a = Convert.ToDouble(text_a.Text.ToString());       //a变量接收文本框的值，并且需要把文本框的字符串类型的值转成double类型
+            a = Convert.ToDouble(text_a.Text.ToString());       //
             b = Convert.ToDouble(text_b.Text.ToString());
             c = Convert.ToDouble(text_c.Text.ToString());
             d = Convert.ToDouble(text_d.Text.ToString());
