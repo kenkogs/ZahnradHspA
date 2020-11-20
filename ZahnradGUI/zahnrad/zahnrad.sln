@@ -5,12 +5,6 @@ VisualStudioVersion = 15.0.28307.1145
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "zahnrad", "zahnrad\zahnrad.csproj", "{6A44E2B6-32FA-442B-97A2-C17F296BF6BD}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{24920FC4-BDB7-40DB-BED0-2E7C14E65D27}"
-	ProjectSection(SolutionItems) = preProject
-		geradzahnrad.jpg = geradzahnrad.jpg
-		innenzahnrad.jpg = innenzahnrad.jpg
-	EndProjectSection
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU

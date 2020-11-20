@@ -5,8 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:zahnrad"
         mc:Ignorable="d"
-        Title="MainWindow" Height="497.962" Width="1171.427">
-    <Grid Margin="0,0,2,4">
+        Title="MainWindow" Height="497.962" Width="815.517">
+    <Grid Margin="0,0,2,4"> 
         <Label Content="a" HorizontalAlignment="Left" Height="25" Margin="31,47,0,0" VerticalAlignment="Top" Width="20"/>
         <TextBox x:Name="text_a" HorizontalAlignment="Left" Height="25" Margin="52,48,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="150"/>
         <Label Content="b" HorizontalAlignment="Left" Height="25" Margin="31,92,0,0" VerticalAlignment="Top" Width="20"/>
@@ -22,7 +22,7 @@
         <TextBox x:Name="text_f" HorizontalAlignment="Left" Height="25" Margin="303,93,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="150" IsEnabled="False"/>
         <Label Content="g=" HorizontalAlignment="Left" Height="25" Margin="261,139,0,0" VerticalAlignment="Top" Width="37"/>
         <TextBox x:Name="text_g" HorizontalAlignment="Left" Height="25" Margin="303,140,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="150" IsEnabled="False"/>
-        <Label Content="i=Teilung,j=Fusskreisdurchmesser,n=kopfkreisdurchmesser,k=Grundkreisdurchmesser" HorizontalAlignment="Left" Height="32" Margin="32,229,0,0" VerticalAlignment="Top" Width="745" FontSize="14"/>
+        <Label Content="i=Teilung,j=Fusskreisdurchmesser1,n=Fusskreisdurchmesser2,k=Grundkreisdurchmesser" HorizontalAlignment="Left" Height="32" Margin="32,229,0,0" VerticalAlignment="Top" Width="745" FontSize="14"/>
         <Label x:Name="label_i" Content="i=" HorizontalAlignment="Left" Height="25" Margin="31,263,0,0" VerticalAlignment="Top" Width="32"/>
         <TextBox x:Name="text_i" HorizontalAlignment="Left" Height="25" Margin="68,264,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="150" IsEnabled="False"/>
         <Label x:Name="label_j" Content="j=" HorizontalAlignment="Left" Height="25" Margin="31,308,0,0" VerticalAlignment="Top" Width="32"/>
@@ -32,10 +32,6 @@
         <Label x:Name="label_k" Content="k=" HorizontalAlignment="Left" Height="25" Margin="31,399,0,0" VerticalAlignment="Top" Width="32"/>
         <TextBox x:Name="text_k" HorizontalAlignment="Left" Height="25" Margin="68,400,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="150" IsEnabled="False"/>
         <Button x:Name="bt_calculate" Content="rechnen" HorizontalAlignment="Left" Height="50" Margin="608,356,0,0" VerticalAlignment="Top" Width="117" Click="Bt_calculate_Click"/>
-        <RadioButton x:Name="radio_Geradzahnrad" Content="Geradzahnrad" HorizontalAlignment="Left" Height="21" Margin="361,316,0,0" VerticalAlignment="Top" Width="126" Checked="Radio_Geradzahnrad_Checked"/>
-        <RadioButton x:Name="radio_Innenzahnrad" Content="Innenzahnrad" HorizontalAlignment="Left" Height="21" Margin="361,346,0,0" VerticalAlignment="Top" Width="126" Checked="Radio_Innenzahnrad_Checked"/>
-        <Image x:Name="image_kind" HorizontalAlignment="Left" Height="261" Margin="777,72,0,0" VerticalAlignment="Top" Width="348"/>
-        <GroupBox Header="zahnradtyp" HorizontalAlignment="Left" Height="118" Margin="324,288,0,0" VerticalAlignment="Top" Width="178"/>
 
     </Grid>
 </Window>
