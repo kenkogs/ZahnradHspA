@@ -28,7 +28,7 @@ namespace zahnrad
         private void Bt_calculate_Click(object sender, RoutedEventArgs e)
         {
             Double a, b, c, d, e1, h, f, g, i, j, k, n;         //Definieren Sie Variablen vom Typ double zum Empfangen von Daten und zum Berechnen von Daten
-            a = Convert.ToDouble(text_a.Text.ToString());       //
+            a = Convert.ToDouble(text_a.Text.ToString());       //Pull Request für Chen
             b = Convert.ToDouble(text_b.Text.ToString());
             c = Convert.ToDouble(text_c.Text.ToString());
             d = Convert.ToDouble(text_d.Text.ToString());
