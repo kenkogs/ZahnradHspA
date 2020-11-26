@@ -5,37 +5,55 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:zahnrad"
         mc:Ignorable="d"
-        Title="MainWindow" Height="497.962" Width="1171.427">
-    <Grid Margin="0,0,2,4">
-        <Label Content="a" HorizontalAlignment="Left" Height="25" Margin="31,47,0,0" VerticalAlignment="Top" Width="20"/>
-        <TextBox x:Name="text_a" HorizontalAlignment="Left" Height="25" Margin="52,48,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="150"/>
-        <Label Content="b" HorizontalAlignment="Left" Height="25" Margin="31,92,0,0" VerticalAlignment="Top" Width="20"/>
-        <TextBox x:Name="text_b" HorizontalAlignment="Left" Height="25" Margin="52,93,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="150"/>
-        <Label Content="c" HorizontalAlignment="Left" Height="25" Margin="31,139,0,0" VerticalAlignment="Top" Width="20"/>
-        <TextBox x:Name="text_c" HorizontalAlignment="Left" Height="25" Margin="52,140,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="150"/>
-        <Label Content="d" HorizontalAlignment="Left" Height="25" Margin="31,183,0,0" VerticalAlignment="Top" Width="20"/>
-        <TextBox x:Name="text_d" HorizontalAlignment="Left" Height="25" Margin="52,184,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="150"/>
-        <Label Content="a=Modul,b=Zaehnezahl,c=Teilkreisdurchmesser,d=Breite,e=Kopfspiel,f=zahnfusshoehe,g=zahnkopfhoehe" HorizontalAlignment="Left" Height="32" Margin="32,10,0,0" VerticalAlignment="Top" Width="745" FontSize="14"/>
-        <Label Content="e=" HorizontalAlignment="Left" Height="25" Margin="261,47,0,0" VerticalAlignment="Top" Width="37"/>
-        <TextBox x:Name="text_e" HorizontalAlignment="Left" Height="25" Margin="303,48,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="150" IsEnabled="False"/>
-        <Label Content="f=" HorizontalAlignment="Left" Height="25" Margin="261,92,0,0" VerticalAlignment="Top" Width="37"/>
-        <TextBox x:Name="text_f" HorizontalAlignment="Left" Height="25" Margin="303,93,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="150" IsEnabled="False"/>
-        <Label Content="g=" HorizontalAlignment="Left" Height="25" Margin="261,139,0,0" VerticalAlignment="Top" Width="37"/>
-        <TextBox x:Name="text_g" HorizontalAlignment="Left" Height="25" Margin="303,140,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="150" IsEnabled="False"/>
-        <Label Content="i=Teilung,j=Fusskreisdurchmesser,n=kopfkreisdurchmesser,k=Grundkreisdurchmesser" HorizontalAlignment="Left" Height="32" Margin="32,229,0,0" VerticalAlignment="Top" Width="745" FontSize="14"/>
-        <Label x:Name="label_i" Content="i=" HorizontalAlignment="Left" Height="25" Margin="31,263,0,0" VerticalAlignment="Top" Width="32"/>
-        <TextBox x:Name="text_i" HorizontalAlignment="Left" Height="25" Margin="68,264,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="150" IsEnabled="False"/>
-        <Label x:Name="label_j" Content="j=" HorizontalAlignment="Left" Height="25" Margin="31,308,0,0" VerticalAlignment="Top" Width="32"/>
-        <TextBox x:Name="text_j" HorizontalAlignment="Left" Height="25" Margin="68,309,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="150" IsEnabled="False"/>
-        <Label x:Name="label_n" Content="n=" HorizontalAlignment="Left" Height="25" Margin="31,355,0,0" VerticalAlignment="Top" Width="32" IsEnabled="False"/>
-        <TextBox x:Name="text_n" HorizontalAlignment="Left" Height="25" Margin="68,356,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="150" IsEnabled="False"/>
-        <Label x:Name="label_k" Content="k=" HorizontalAlignment="Left" Height="25" Margin="31,399,0,0" VerticalAlignment="Top" Width="32"/>
-        <TextBox x:Name="text_k" HorizontalAlignment="Left" Height="25" Margin="68,400,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="150" IsEnabled="False"/>
-        <Button x:Name="bt_calculate" Content="rechnen" HorizontalAlignment="Left" Height="50" Margin="608,356,0,0" VerticalAlignment="Top" Width="117" Click="Bt_calculate_Click"/>
-        <RadioButton x:Name="radio_Geradzahnrad" Content="Geradzahnrad" HorizontalAlignment="Left" Height="21" Margin="361,316,0,0" VerticalAlignment="Top" Width="126" Checked="Radio_Geradzahnrad_Checked"/>
-        <RadioButton x:Name="radio_Innenzahnrad" Content="Innenzahnrad" HorizontalAlignment="Left" Height="21" Margin="361,346,0,0" VerticalAlignment="Top" Width="126" Checked="Radio_Innenzahnrad_Checked"/>
-        <Image x:Name="image_kind" HorizontalAlignment="Left" Height="261" Margin="777,72,0,0" VerticalAlignment="Top" Width="348"/>
-        <GroupBox Header="zahnradtyp" HorizontalAlignment="Left" Height="118" Margin="324,288,0,0" VerticalAlignment="Top" Width="178"/>
+        Title="zahnrad" Height="549.462" Width="700.927" Background="#FFD4D4D4" HorizontalContentAlignment="Stretch" MaxHeight="520" MinHeight="520" MaxWidth="710" MinWidth="710">
+    <Grid x:Name="endeBtn1" Margin="-35,-76,-18,-37" Background="#FFD7D8CD" MaxWidth="691" MinWidth="691" MinHeight="503" MaxHeight="503">
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Label x:Name="lab_a" Content="a" Margin="32,66,0,0" Height="26" VerticalAlignment="Top" HorizontalAlignment="Left" Width="18" FontWeight="Bold"/>
+        <TextBox x:Name="tb_a" Margin="68,66,0,0" TextWrapping="Wrap" Background="White" Height="26" VerticalAlignment="Top" HorizontalAlignment="Left" Width="121"/>
+        <Label Content="b" Margin="31,115,0,0" Height="26" VerticalAlignment="Top" HorizontalAlignment="Left" Width="18" FontWeight="Bold"/>
+        <TextBox x:Name="tb_b" HorizontalAlignment="Left" Height="25" Margin="68,115,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="121"/>
+        <Label x:Name="lab_c" Content="c" Margin="32,166,0,0" Height="26" VerticalAlignment="Top" HorizontalAlignment="Left" Width="18" FontWeight="Bold"/>
+        <TextBox x:Name="tb_c" Margin="68,166,0,0" TextWrapping="Wrap" HorizontalAlignment="Left" Width="121" Height="26" VerticalAlignment="Top"/>
+        <Label x:Name="lab_d" Content="d" Margin="32,221,0,0" Height="26" VerticalAlignment="Top" HorizontalAlignment="Left" Width="18" FontWeight="Bold"/>
+        <TextBox x:Name="tb_d" Margin="68,221,0,0" TextWrapping="Wrap" HorizontalAlignment="Left" Width="121" Height="26" VerticalAlignment="Top"/>
+        <Label x:Name="lab_e" Content="e" Margin="320,66,0,0" HorizontalAlignment="Left" Width="19" Height="26" VerticalAlignment="Top" FontWeight="Bold"/>
+        <TextBox x:Name="tb_e" Margin="344,66,0,0" TextWrapping="Wrap" IsEnabled="False" Background="#FFF7FDF4" HorizontalAlignment="Left" Width="122" Height="26" VerticalAlignment="Top"/>
+        <Label x:Name="lab_f" Content="f" Margin="320,115,0,0" HorizontalAlignment="Left" Width="20" Height="26" VerticalAlignment="Top" FontWeight="Bold"/>
+        <TextBox x:Name="tb_f" Margin="345,115,0,0" TextWrapping="Wrap" IsEnabled="False" Height="26" VerticalAlignment="Top" HorizontalAlignment="Left" Width="121"/>
+        <Label x:Name="lab_g" Content="g" Margin="319,166,0,0" Height="26" VerticalAlignment="Top" HorizontalAlignment="Left" Width="20" FontWeight="Bold"/>
+        <TextBox x:Name="tb_g" Margin="345,166,0,0" TextWrapping="Wrap" IsEnabled="False" Height="26" VerticalAlignment="Top" HorizontalAlignment="Left" Width="121"/>
+        <Label x:Name="lab_i" Content="i" Margin="32,297,0,0" HorizontalAlignment="Left" Width="16" Height="26" VerticalAlignment="Top" FontWeight="Bold"/>
+        <TextBox x:Name="tb_j" Margin="68,346,0,0" TextWrapping="Wrap" IsEnabled="False" HorizontalAlignment="Left" Width="121" Height="26" VerticalAlignment="Top"/>
+        <Label x:Name="lab_j" Content="j" Margin="31,346,0,0" HorizontalAlignment="Left" Width="19" Height="26" VerticalAlignment="Top" FontWeight="Bold"/>
+        <TextBox x:Name="tb_i" Margin="68,298,0,0" TextWrapping="Wrap" IsEnabled="False" HorizontalAlignment="Left" Width="121" Height="26" VerticalAlignment="Top"/>
+        <Label x:Name="lab_n" Content="n" Margin="31,404,0,0" IsEnabled="False" RenderTransformOrigin="0.531,0.72" Height="26" VerticalAlignment="Top" HorizontalAlignment="Left" Width="30" FontWeight="Bold"/>
+        <TextBox x:Name="tb_n" Margin="68,404,0,0" TextWrapping="Wrap" IsEnabled="False" HorizontalAlignment="Left" Width="121" Height="26" VerticalAlignment="Top"/>
+        <Label x:Name="lab_k" Content="k" Margin="31,465,0,0" Height="26" VerticalAlignment="Top" HorizontalAlignment="Left" Width="30" FontWeight="Bold"/>
+        <TextBox x:Name="tb_k" Margin="68,465,0,0" TextWrapping="Wrap" IsEnabled="False" HorizontalAlignment="Left" Width="121" Height="26" VerticalAlignment="Top"/>
+        <Button x:Name="btn_Calculate" Content="Berechnung" Margin="514,373,0,0" Click="Bt_calculate_Click" FontWeight="Bold" FontSize="14" Background="#FFC7C7C7" HorizontalAlignment="Left" Width="115" Height="52" VerticalAlignment="Top"/>
+        <RadioButton x:Name="radio_Geradzahnrad" Content="Stirnzahnrad" HorizontalAlignment="Left" Height="21" Margin="288,316,0,0" VerticalAlignment="Top" Width="126" Checked="Radio_Geradzahnrad_Checked" FontWeight="Bold"/>
+        <RadioButton x:Name="radio_Innenzahnrad" Content="Innenzahnrad" HorizontalAlignment="Left" Height="21" Margin="288,346,0,0" VerticalAlignment="Top" Width="126" Checked="Radio_Innenzahnrad_Checked" FontWeight="Bold"/>
+        <Image x:Name="image_kind" Margin="473,48,0,0" HorizontalAlignment="Left" Width="195" Height="199" VerticalAlignment="Top"/>
+        <GroupBox x:Name="grpBx" Header="Zahnradtyp" Margin="279,286,0,0" Height="86" VerticalAlignment="Top" HorizontalAlignment="Left" Width="175" FontWeight="Bold"/>
+        <TextBlock x:Name="tbl_a" Margin="74,45,0,0" TextWrapping="Wrap" HorizontalAlignment="Left" Width="115" Height="17" VerticalAlignment="Top" FontWeight="Bold"><Run Text="Modul"/><Run Text=" in mm"/></TextBlock>
+        <TextBlock x:Name="tbl_AnzahlDerZähne" Margin="68,96,0,0" TextWrapping="Wrap" Text="Anzahl der Zähne" HorizontalAlignment="Left" Width="133" Height="20" VerticalAlignment="Top" FontWeight="Bold"/>
+        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <TextBlock x:Name="tbl_Breite" Margin="88,199,0,0" TextWrapping="Wrap" Text="Breite in mm" HorizontalAlignment="Left" Width="88" Height="17" VerticalAlignment="Top" FontWeight="Bold"/>
+        <TextBlock x:Name="tbl_Zahnfußhöhe" Margin="343,96,0,0" TextWrapping="Wrap" Text="Zahnfußhöhe in mm" Height="20" VerticalAlignment="Top" HorizontalAlignment="Left" Width="125" FontWeight="Bold"/>
+        <TextBlock x:Name="tbl_Kopfspiel" Margin="343,45,0,0" TextWrapping="Wrap" Text="Kopfspiel in mm" Height="17" VerticalAlignment="Top" HorizontalAlignment="Left" Width="100" FontWeight="Bold"/>
+        <TextBlock x:Name="tbl_c" HorizontalAlignment="Left" Margin="42,145,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="183" FontWeight="Bold"><Run Text="Teilkreisdurchmesser"/><Run Text=" in mm"/></TextBlock>
+        <TextBlock x:Name="tbl_Zahnkopfhoehe" Margin="343,144,0,0" TextWrapping="Wrap" HorizontalAlignment="Left" Width="123" Height="17" VerticalAlignment="Top" FontWeight="Bold"><Run Text="Zahnkopfhöhe"/><Run Text=" in mm"/></TextBlock>
+        <TextBlock x:Name="tbl_Fußkreisdurchmesser" Margin="42,327,0,0" TextWrapping="Wrap" Text="Fußkreisdurchmesser in mm" HorizontalAlignment="Left" Width="171" Height="17" VerticalAlignment="Top" FontWeight="Bold"/>
+        <TextBlock x:Name="tbl_Grundkreisdurchmesser" Margin="32,447,0,0" TextWrapping="Wrap" Text="Grundkreisdurchmesser in mm" Height="17" VerticalAlignment="Top" HorizontalAlignment="Left" Width="193" FontWeight="Bold"/>
+        <TextBlock x:Name="tbl_Kopfkreisdurchmesser" Margin="42,382,0,0" TextWrapping="Wrap" Text="Kopfkreisdurchmesser in mm" HorizontalAlignment="Left" Width="183" Height="17" VerticalAlignment="Top" FontWeight="Bold"/>
+        <TextBlock x:Name="tbl_i" Margin="68,276,0,0" TextWrapping="Wrap" Text="Teilung in mm" HorizontalAlignment="Left" Width="98" Height="17" VerticalAlignment="Top" FontWeight="Bold"/>
+        <TextBlock HorizontalAlignment="Left" Margin="549,493,0,-6" TextWrapping="Wrap" VerticalAlignment="Top" Width="142"><Run Text="© Zahnlos"/><Run Text=" GmbH"/><Run Text="  Co. KG"/></TextBlock>
+        <Button x:Name="btn_Ende" Content="Ende" HorizontalAlignment="Left" Margin="536,441,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click" Background="#FFBFBEBE" FontWeight="Bold" FontSize="16"/>
 
     </Grid>
 </Window>
