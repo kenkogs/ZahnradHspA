@@ -6,7 +6,7 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{6A44E2B6-32FA-442B-97A2-C17F296BF6BD}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>zahnrad</RootNamespace>
+    <RootNamespace>Gearwheelcalculator</RootNamespace>
     <AssemblyName>zahnrad</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
@@ -32,6 +32,9 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Zahnrad icon PNG.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -94,6 +97,9 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="innenzahnrad.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Zahnrad icon PNG.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
